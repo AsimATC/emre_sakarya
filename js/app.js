@@ -379,7 +379,7 @@ $(function () {
         mainNav = $('.app-header').find('.main-nav'),
         btnBurgerTopLine = $('.top-line__btn-burger');
 
-    if ($(window).width() >= 1024 && mainNavItem.length > 3) {
+    if ($(window).width() >= 1024 && mainNavItem.length > 5) {
       btnBurgerTopLine.fadeIn(800);
     } else {
       mainNav.fadeIn(800);

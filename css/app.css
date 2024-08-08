@@ -163,10 +163,6 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-h1 {
-  font-family: 'Oranienbaum', serif;
-  font-weight: 400;
-}
 
 p {
   margin-top: 0;
@@ -909,12 +905,12 @@ svg:not(:root) {
 .legal-info__copy,
 .legal-info__privacy-policy {
   font-size: 16px;
-  color: #8c8c8c;
+  color: #ffffff;
   font-weight: 300;
 }
 
 .legal-info__privacy-policy:hover {
-  color: #8c8c8c;
+  color: #dadada;
 }
 
 .app-header {
@@ -1173,7 +1169,7 @@ html {
 }
 
 .remodal-overlay.mobile {
-  background-color: rgba(0,0,0,0.95);
+  background-color: #fff;
 }
 
 .btn-up {
@@ -1721,26 +1717,21 @@ html {
 
 .contacts__phone {
   font-size: 14px;
-  color: #fff;
+  color: #333;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 
 .contacts__phone:hover {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   cursor: default;
 }
 
-.logo__img {
-  width: 141px;
-  max-width: 100%;
-  display: block;
-}
-
 .logo__img img {
-  max-width: 100%;
-  height: auto;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -1767,7 +1758,7 @@ html {
 
 .main-nav__nav ul li a {
   font-size: 14px;
-  color: #fff;
+  color: #333;
   font-weight: 300;
   text-transform: uppercase;
   transition: color 0.3s;
@@ -1919,8 +1910,6 @@ html {
 .main-slider__title {
   font-size: 60px;
   color: #fff;
-  font-family: 'Oranienbaum', serif;
-  font-weight: 400;
   line-height: 64px;
   letter-spacing: -1.5px;
   text-transform: uppercase;
@@ -1967,7 +1956,7 @@ html {
   position: fixed;
   width: 100%;
   padding: 15px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #fff;
   top: 0;
   left: 0;
   z-index: 50;
@@ -3475,7 +3464,7 @@ html {
 
 .top-line {
   padding: 15px 15px 15px 40px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: #fff;
   width: 1170px;
   position: absolute;
   top: 60px;
@@ -3490,7 +3479,7 @@ html {
   position: fixed;
   width: 100%;
   padding-left: 15px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, 1);
   top: 0;
   left: 0;
   z-index: 50;
@@ -4841,4 +4830,15 @@ html {
 .company-news__img img {
   max-width: 140% !important;
   width: 140% !important;
+}
+
+@media screen and (max-width: 540px){
+  .logo__img img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.mobile-panel__btn-burger{
+  margin-top: 31px;
+}
 }
